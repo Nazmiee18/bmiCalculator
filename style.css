@@ -80,3 +80,74 @@ svg {
   background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
   z-index: -9999;
 }
+
+@media screen and (width <= 480px) {
+  body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #16161a;
+    color: #fffffe;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.3px);
+    /* filter: blur(1.3px); */
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    border-radius: 20px;
+    width: 200px;
+  }
+
+  .container input {
+    padding: 2px 3px;
+    width: 10rem;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 5px 0px;
+    font-size: 1.4rem;
+  }
+
+  .container label {
+    display: block;
+    margin: 10px 0;
+    font-size: 10px;
+  }
+
+  .container p {
+    font-size: 0.6rem;
+  }
+
+  .btn-cal {
+    background-image: linear-gradient(to right, #ece9e6 0%, #ffffff 51%, #ece9e6 100%);
+    margin: 10px 2px;
+    padding: 5px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #000;
+    /* box-shadow: 0 0 20px #eee; */
+    border-radius: 10px;
+    display: block;
+    font-size: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+
+  div #hasil {
+    font-size: 0.6rem;
+  }
+}
