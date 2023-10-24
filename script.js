@@ -11,7 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const bulatBmi = bmiCal.toFixed(1);
     let result = '';
 
-    if (!isNaN(bulatBmi)) {
+    if (isNaN(bulatBmi) || bulatBmi <= 0) {
+      hasilBmi.innerText = 'Please enter weight and height correctly';
+    } else if (!isNaN(bulatBmi)) {
       if (bulatBmi <= 18.5) {
         result = 'Underweight';
       } else if (bulatBmi <= 24.9) {
